@@ -1,2 +1,13 @@
-# Creature-spy-mouse-tracking-idea
-This is a small front-end design idea where multiple creatures track the user's mouse movement using JavaScript. The goal of this project is to practice DOM manipulation, event handling, and basic trigonometry for interactive UI behavior.
+Project: Employee Performance Rating System
+
+Description:
+This is a simple Java console program that evaluates an employee's performance based on task grades and working hours. The program converts task grades into points and calculates an overall performance rating using object-oriented programming concepts.
+
+Concepts Practiced:
+
+Java Classes and Objects
+Constructors
+Encapsulation
+Conditional Logic
+User Input with Scanner
+Basic Data Processing
