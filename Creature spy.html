@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Creature spy</title>
+
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background: #2f3542;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 120px);
+        gap: 40px;
+      }
+
+      /*Creatures*/
+      .monster {
+        width: 100px;
+        height: 100px;
+        position: relative;
+      }
+
+      /*Shapres of creatures*/
+      .m1 {
+        background: #6c5ce7;
+        border-radius: 20px;
+      }
+      .m2 {
+        background: #00cec9;
+        border-radius: 50%;
+      }
+      .m3 {
+        background: #e17055;
+        border-radius: 50% / 70%;
+      }
+      .m4 {
+        background: #f9ca24;
+        border-radius: 50% 50% 20% 20%;
+      }
+      .m5 {
+        background: #55efc4;
+        transform: rotate(45deg);
+      }
+      .m6 {
+        background: #ff7675;
+        border-radius: 10px 50px 10px 50px;
+      }
+
+      /*Eyes of the creatures*/
+      .eye {
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+      }
+
+      /*Left and right eyes*/
+      .eye.left {
+        left: 20px;
+      }
+      .eye.right {
+        right: 20px;
+      }
+
+      /*Pupil*/
+      .pupil {
+        width: 8px;
+        height: 8px;
+        background: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 6px;
+        left: 6px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="monster m1">
+        <div class="eye left"><div class="pupil"></div></div>
+        <div class="eye right"><div class="pupil"></div></div>
+      </div>
+
+      <div class="monster m2">
+        <div class="eye left"><div class="pupil"></div></div>
+        <div class="eye right"><div class="pupil"></div></div>
+      </div>
+
+      <div class="monster m3">
+        <div class="eye left"><div class="pupil"></div></div>
+        <div class="eye right"><div class="pupil"></div></div>
+      </div>
+
+      <div class="monster m4">
+        <div class="eye left"><div class="pupil"></div></div>
+        <div class="eye right"><div class="pupil"></div></div>
+      </div>
+
+      <div class="monster m5">
+        <div class="eye left"><div class="pupil"></div></div>
+        <div class="eye right"><div class="pupil"></div></div>
+      </div>
+
+      <div class="monster m6">
+        <div class="eye left"><div class="pupil"></div></div>
+        <div class="eye right"><div class="pupil"></div></div>
+      </div>
+    </div>
+
+    <script>
+      let pupils = document.querySelectorAll(".pupil");
+
+      //Track on mouse
+      document.addEventListener("mousemove", function (e) {
+        pupils.forEach(function (pupil) {
+          let eye = pupil.parentElement;
+          let rect = eye.getBoundingClientRect();
+
+          let eyeX = rect.left + rect.width / 2;
+          let eyeY = rect.top + rect.height / 2;
+
+          let mouseX = e.clientX;
+          let mouseY = e.clientY;
+
+          let angle = Math.atan2(mouseY - eyeY, mouseX - eyeX);
+
+          let moveX = Math.cos(angle) * 6;
+          let moveY = Math.sin(angle) * 6;
+
+          pupil.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+      });
+    </script>
+  </body>
+</html>
