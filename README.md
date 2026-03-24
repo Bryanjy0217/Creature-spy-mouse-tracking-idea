@@ -1,13 +1,21 @@
-Project: Employee Performance Rating System
+# Interactive Monster Eyes
 
-Description:
-This is a simple Java console program that evaluates an employee's performance based on task grades and working hours. The program converts task grades into points and calculates an overall performance rating using object-oriented programming concepts.
+This is a small front-end design idea where multiple creatures track the user's mouse movement using JavaScript.
+The idea comes from a funny picture I saw and it was built to practice interactive UI behavior while exploring how movement logic works using simple mathematical calculations.
 
-Concepts Practiced:
+## Features
+- Multiple creatures that react to mouse movement
+- Eyes dynamically follow the cursor position
+- Smooth and responsive interaction
+- Simple and creative visual design
+- Technologies
+- HTML
+- CSS
+- JavaScript
 
-Java Classes and Objects
-Constructors
-Encapsulation
-Conditional Logic
-User Input with Scanner
-Basic Data Processing
+## Purpose
+This project was created as part of my learning process in front-end development.
+The focus is on understanding how DOM manipulation, event handling, and basic math can be combined to create interactive user experiences.
+
+## Author
+Bryan Lim
