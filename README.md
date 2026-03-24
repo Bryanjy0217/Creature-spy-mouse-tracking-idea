@@ -1,4 +1,4 @@
-# Interactive Monster Eyes
+# The Spying Creature
 
 This is a small front-end design idea where multiple creatures track the user's mouse movement using JavaScript.
 The idea comes from a funny picture I saw and it was built to practice interactive UI behavior while exploring how movement logic works using simple mathematical calculations.
