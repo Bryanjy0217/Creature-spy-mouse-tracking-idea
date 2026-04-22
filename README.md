@@ -13,6 +13,10 @@ The idea comes from a funny picture I saw and it was built to practice interacti
 - CSS
 - JavaScript
 
+## Technologies
+- HTML
+- CSS
+
 ## Purpose
 This project was created as part of my learning process in front-end development.
 The focus is on understanding how DOM manipulation, event handling, and basic math can be combined to create interactive user experiences.
